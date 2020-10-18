@@ -5,6 +5,7 @@
   /*background: crimson; */
   font-family: "Ubuntu", sans-serif;
   transition: all 0.7s ease-in;
+  z-index: 3;
 }
 
 .navbar.active {
