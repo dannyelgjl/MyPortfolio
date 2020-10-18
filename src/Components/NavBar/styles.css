@@ -1,0 +1,42 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  /*background: crimson; */
+  font-family: "Ubuntu", sans-serif;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: #ffff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3 ease;
+}
+
+.navbar .menu li a:hover {
+  color: #6fd775;
+}
