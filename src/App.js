@@ -1,21 +1,20 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-import api from './services/api';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
+import Routes from './routes';
+
+import NavBar from './Components/NavBar';
+
+import './styles/global/styles.css';
 
 
-  useEffect(() => {
-    api.get('users/dannyelgjl').then(response => {
-      console.log(response.data);    
-    });
-  },[])
-
+export default function App () {
   return (
-    <div className="App">
-     <h1>Me</h1>
-    </div>
-  );
+    <BrowserRouter>
+      <NavBar />
+      <Routes />
+    </BrowserRouter>
+  )
 }
 
-export default App;
