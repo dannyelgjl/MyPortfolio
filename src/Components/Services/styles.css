@@ -1,0 +1,100 @@
+.services {
+  font-family: "Poppins", sans-serif;
+}
+
+.services {
+  color: #fff;
+  background: #111;
+}
+
+.services .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  margin-top: 60px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.services .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.services .title::after {
+  content: "what I provide";
+  position: absolute;
+  background: #111;
+  bottom: -10px;
+  left: 50%;
+  color: #6fd775;
+  font-size: 20px;
+  padding: 5px;
+  transform: translateX(-50%);
+}
+
+.services .serv-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services .serv-content .card {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card svg {
+  color: #6fd775;
+  font-size: 50px;
+  transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover svg {
+  color: #fff;
+}
+
+.services .serv-content .card:hover {
+  background: #6fd775;
+}
+
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+
+.services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+@media (max-width: 947px) {
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 690px) {
+  .services .serv-content .card {
+    width: 100%;
+  }
+}

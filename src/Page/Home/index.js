@@ -2,6 +2,7 @@ import React from 'react';
 
 import { AiOutlineGithub } from 'react-icons/ai'
 import Cards from '../../Components/Cards';
+import Services from '../../Components/Services';
 
 import './styles.css';
 
@@ -20,6 +21,7 @@ const Home = () => {
     </section>
 
     <Cards />
+    <Services />
   </>
   );
 }
