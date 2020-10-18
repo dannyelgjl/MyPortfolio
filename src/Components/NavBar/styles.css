@@ -4,6 +4,16 @@
   padding: 30px 0;
   /*background: crimson; */
   font-family: "Ubuntu", sans-serif;
+  transition: all 0.7s ease-in;
+}
+
+.navbar.active {
+  background: #6fd775;
+}
+
+.navbar.sticky {
+  background: #6fd775;
+  padding: 30px 0;
 }
 
 .max-width {
@@ -22,6 +32,14 @@
   color: #ffff;
   font-size: 35px;
   font-weight: 600;
+}
+
+.navbar .logo a span {
+  color: #6fd775;
+}
+
+.navbar.active .logo a span {
+  color: #fff;
 }
 
 .navbar .menu li {
