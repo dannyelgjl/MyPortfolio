@@ -3,6 +3,8 @@ import React from 'react';
 import { AiOutlineGithub } from 'react-icons/ai'
 import Cards from '../../Components/Cards';
 import Services from '../../Components/Services';
+import Skills from '../../Components/Skills';
+
 
 import './styles.css';
 
@@ -22,6 +24,7 @@ const Home = () => {
 
     <Cards />
     <Services />
+    <Skills />
   </>
   );
 }
