@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FiMenu } from 'react-icons/fi'
 
 import './styles.css';
 
@@ -29,8 +30,10 @@ const NavBar = () => {
               <li><a href="">Teams</a></li>
               <li><a href="">Contact</a></li>
             </ul>
-          <script src="../../script.js" ></script>
-        
+         
+        <div className="menu-bnt">
+          <FiMenu color="#fff" size={30} />
+        </div>
       </div>
     </div>
   );
