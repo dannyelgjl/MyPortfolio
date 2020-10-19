@@ -1,3 +1,14 @@
+.skills {
+  font-family: "Poppins", sans-serif;
+}
+
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .skills .title {
   position: relative;
   text-align: center;
@@ -21,7 +32,7 @@
 }
 
 .skills .title::after {
-  content: "who I am";
+  content: "what I know";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -30,4 +41,62 @@
   padding: 5px;
   background: #fff;
   transform: translateX(-50%);
+}
+
+.skills .skills-content .column {
+  width: calc(50% - 10px);
+}
+
+.skills .skills-content .left .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills .skills-content .right .bars {
+  margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+  height: 5px;
+  width: 100%;
+  background: #eee;
+  position: relative;
+}
+
+.skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+
+  left: 0;
+  top: 0;
+  background: #6fd775;
+}
+
+.skills-content .right .html::before {
+  width: 100%;
+}
+
+.skills-content .right .css::before {
+  width: 80%;
+}
+
+.skills-content .right .javascript::before {
+  width: 95%;
+}
+
+.skills-content .right .reactjs::before {
+  width: 100%;
 }
